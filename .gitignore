@@ -1,0 +1,31 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build
+dist/
+build/
+
+# Cache
+.cache/
+coverage/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# VS Code (opcional)
+.vscode/
+
+# Prisma
+generated/
