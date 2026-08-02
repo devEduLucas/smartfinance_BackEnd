@@ -4,12 +4,14 @@ node_modules/
 # Variáveis de ambiente
 .env
 .env.*
+!.env.example
 
 # Logs
 logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
+yarn-error.log*
 pnpm-debug.log*
 
 # Build
@@ -19,13 +21,33 @@ build/
 # Cache
 .cache/
 coverage/
+.nyc_output/
 
-# Sistema Operacional
+# TypeScript
+*.tsbuildinfo
+
+# Arquivos do sistema
 .DS_Store
 Thumbs.db
 
-# VS Code (opcional)
+# Configurações do VS Code
 .vscode/
+!.vscode/extensions.json
 
-# Prisma
-generated/
+# IDEs
+.idea/
+
+# Arquivos temporários
+tmp/
+temp/
+
+# Uploads (caso exista)
+uploads/
+
+# Banco de dados local
+*.sqlite
+*.sqlite3
+
+# Arquivos de backup
+*.bak
+*.old
